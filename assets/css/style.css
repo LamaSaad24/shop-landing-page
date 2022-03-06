@@ -206,7 +206,9 @@ footer{
 footer .row{
     justify-content: space-between;
 }
-
+footer :is(p,div){
+    margin: 10px 0;
+}
 .icons a{
     color: #FFF;
 }
@@ -234,6 +236,7 @@ footer .row{
     text-align: center;
     padding: 10px 20px;
     border-radius: 5px;
+    z-index: 9999;
 }
 .cart p{
     margin: 10px 0;
@@ -248,3 +251,26 @@ footer .row{
     cursor: pointer;
 }
 /* end cart */
+
+/* start responsive style */
+@media (max-width: 575px){
+    nav ul{
+        display:none!important;
+    }
+    header{
+        padding:20px;
+        height: auto;
+    }
+    .product .item{
+        width: 100%;
+    }
+    footer .row{
+        flex-wrap: wrap;
+        justify-content: center
+    }
+}
+@media (min-width: 576px){
+   .product .item{
+        width: 50%;
+    }
+}
