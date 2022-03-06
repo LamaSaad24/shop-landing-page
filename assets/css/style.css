@@ -269,7 +269,8 @@ footer :is(p,div){
         justify-content: center
     }
 }
-@media (min-width: 576px){
+
+@media (min-width: 576px) and (max-width:767px){
    .product .item{
         width: 50%;
     }
